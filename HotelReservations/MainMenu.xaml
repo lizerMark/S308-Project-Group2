@@ -8,7 +8,7 @@
         Title="MainMenu" Height="388" Width="694">
     <Grid Background="#FFE6E6F0">
         <Image x:Name="image" HorizontalAlignment="Left" Height="258" VerticalAlignment="Top" Width="427" Margin="135,69,0,0" Source="Images/The-Peninsula-Hong-Kong-860.jpg"/>
-        <Button x:Name="btnMainMenuP1" Content="Main Menu" HorizontalAlignment="Left" Margin="38,39,0,0" VerticalAlignment="Top" Width="115" FontFamily="Verdana" Click="btnMainMenuP1_Click"/>
+        <Button x:Name="btnMainMenuP1" Content="Main Menu" HorizontalAlignment="Left" Margin="38,39,0,0" VerticalAlignment="Top" Width="115" FontFamily="Verdana"/>
         <Button x:Name="btnNewReservationP1" Content="New Reservation" HorizontalAlignment="Left" Margin="188,39,0,0" VerticalAlignment="Top" Width="115" FontFamily="Verdana"/>
         <Button x:Name="btnRoomManagementP1" Content="Room Management" HorizontalAlignment="Left" Margin="345,39,0,0" VerticalAlignment="Top" Width="123" FontFamily="Verdana"/>
         <Button x:Name="btnReservationsReportP1" Content="Reservations Report" HorizontalAlignment="Left" Margin="500,39,0,0" VerticalAlignment="Top" Width="124" FontFamily="Verdana"/>

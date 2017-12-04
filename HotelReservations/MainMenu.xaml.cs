@@ -34,8 +34,6 @@ namespace HotelReservations
 
 
             //asdfasdfasdfasdfasdf
-
-            //some more changes
         }
     }
 }
