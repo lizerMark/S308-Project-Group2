@@ -150,6 +150,12 @@ namespace HotelReservations {
             return;
             case 3:
             this.btnMainMenuP1 = ((System.Windows.Controls.Button)(target));
+            
+            #line 11 "..\..\MainMenu.xaml"
+            this.btnMainMenuP1.Click += new System.Windows.RoutedEventHandler(this.btnMainMenuP1_Click);
+            
+            #line default
+            #line hidden
             return;
             case 4:
             this.btnNewReservationP1 = ((System.Windows.Controls.Button)(target));

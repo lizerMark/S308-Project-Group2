@@ -35,5 +35,12 @@ namespace HotelReservations
 
             //asdfasdfasdfasdfasdf
         }
+
+        private void btnMainMenuP1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+
     }
 }
