@@ -29,3 +29,6 @@ I:\FinalProject_Group02\HotelReservations\obj\Debug\HotelReservations.pdb
 \\iu-uits-ecvfp1\ts_redirect_17-18$\lizer\Desktop\FinalProject_Group02\FinalProject_Group02\HotelReservations\bin\Debug\HotelReservations.exe.config
 \\iu-uits-ecvfp1\ts_redirect_17-18$\lizer\Desktop\FinalProject_Group02\FinalProject_Group02\HotelReservations\obj\Debug\HotelReservations.exe
 \\iu-uits-ecvfp1\ts_redirect_17-18$\lizer\Desktop\FinalProject_Group02\FinalProject_Group02\HotelReservations\obj\Debug\HotelReservations.pdb
+C:\Users\abilowen\Source\Repos\S308-Project-Group2\HotelReservations\bin\Debug\HotelReservations.exe.config
+C:\Users\abilowen\Source\Repos\S308-Project-Group2\HotelReservations\obj\Debug\HotelReservations.exe
+C:\Users\abilowen\Source\Repos\S308-Project-Group2\HotelReservations\obj\Debug\HotelReservations.pdb
