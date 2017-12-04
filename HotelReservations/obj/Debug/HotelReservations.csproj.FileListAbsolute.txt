@@ -51,3 +51,6 @@ I:\FinalProject_Group02\HotelReservations\obj\Debug\HotelReservations.pdb
 \\iu-uits-ecvfp1\ts_redirect_17-18$\lizer\Desktop\S308-Project\HotelReservations\obj\Debug\HotelReservations.csproj.GenerateResource.Cache
 \\iu-uits-ecvfp1\ts_redirect_17-18$\lizer\Desktop\S308-Project\HotelReservations\obj\Debug\HotelReservations.exe
 \\iu-uits-ecvfp1\ts_redirect_17-18$\lizer\Desktop\S308-Project\HotelReservations\obj\Debug\HotelReservations.pdb
+\\iu-uits-ecvfp1\ts_redirect_17-18$\abilowen\Desktop\Final Project\HotelReservations\bin\Debug\HotelReservations.exe.config
+\\iu-uits-ecvfp1\ts_redirect_17-18$\abilowen\Desktop\Final Project\HotelReservations\obj\Debug\HotelReservations.exe
+\\iu-uits-ecvfp1\ts_redirect_17-18$\abilowen\Desktop\Final Project\HotelReservations\obj\Debug\HotelReservations.pdb

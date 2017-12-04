@@ -36,6 +36,8 @@ namespace HotelReservations
 
             string strCardNumberP4 = txtCardP4.Text.Trim();
 
+            //Validation
+
             //Set up Nav Bar
 
             //Validate Input (everything but email is required)
