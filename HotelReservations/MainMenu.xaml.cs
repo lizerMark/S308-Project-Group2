@@ -30,10 +30,14 @@ namespace HotelReservations
             //ASK ABOUT THE EXITING THE SYSTEM
 
 
-            //Can we all see this message?
+            //NewReservation newRes = new NewReservation();
+            //newRes.Show();
+            //this.Close();
 
 
-            //asdfasdfasdfasdfasdf
+
+
+
         }
     }
 }
