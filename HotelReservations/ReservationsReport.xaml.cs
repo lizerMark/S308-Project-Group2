@@ -24,8 +24,8 @@ namespace HotelReservations
             InitializeComponent();
 
             //Declare variables
-            string strDateCheckInP5 = dateCheckInP5.ToString();
-            string strDateCheckOutP5 = dateCheckOutP5.ToString();
+            DateTime datDateCheckInP5 = dateCheckInP5.SelectedDate.Value;
+            DateTime datDateCheckOutP5 = dateCheckOutP5.SelectedDate.Value;
             string strLastNameP5 = txtLastNameP5.Text.Trim();
             string strRoomTypeP5 = cboRoomTypeP5.SelectedIndex.ToString();
         //Create Nav bar
