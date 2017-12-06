@@ -49,17 +49,6 @@ namespace HotelReservations
             string strInputRoomNumberKingSuiteP3 = Convert.ToString(txtRoomNumberKingSuite1P3.Text.Trim());
             string strInputRoomNumberPresidentialP3 = Convert.ToString(txtRoomNumberPresidential1P3.Text.Trim());
 
-            //Validate input (fields are not required but are either intergers or doubles)
-
-            if (!Int32.TryParse(strInputRoomNumberKingP3, out intInputRoomNumberKingP3)) 
-            {
-                MessageBox.Show("Please enter a valid price.");
-                    }
-            if (!Int32.TryParse(strInputRoomNumberKingDeluxeP3, out intInputRoomNumberKingDeluxeP3))
-            {
-                MessageBox.Show("Please enter a valid price.");
-            }
-
             double dblAdminPriceKingP3 = Convert.ToDouble(txtPriceKingP3.Text.Trim());
             double dblAdminPriceKingDeluxeP3 = Convert.ToDouble(txtPriceKingDeluxeP3.Text.Trim());
             double dblAdminPriceQueenP3 = Convert.ToDouble(txtPriceQueensP3.Text.Trim());
@@ -86,11 +75,115 @@ namespace HotelReservations
             string strInputPriceKingSuiteP3 = Convert.ToString(txtPriceKingSuite1P3.Text.Trim());
             string strInputPricePresidentialP3 = Convert.ToString(txtPricePresidential1P3.Text.Trim());
 
+            //Validate input (fields are not required but are either intergers or doubles)
+
+            if (!Int32.TryParse(strInputRoomNumberKingP3, out intInputRoomNumberKingP3)) 
+            {
+                MessageBox.Show("Please enter a valid number of rooms.");
+                    }
+            if (!Int32.TryParse(strInputRoomNumberKingDeluxeP3, out intInputRoomNumberKingDeluxeP3))
+            {
+                MessageBox.Show("Please enter a valid number of rooms.");
+            }
+            if (!Int32.TryParse(strInputRoomNumberQueenP3, out intInputRoomNumberQueenP3))
+            {
+                MessageBox.Show("Please enter a valid number of rooms.");
+            }
+            if (!Int32.TryParse(strInputRoomNumberQueenDeluxeP3, out intInputRoomNumberQueenDeluxeP3))
+            {
+                MessageBox.Show("Please enter a valid number of rooms.");
+            }
+            if (!Int32.TryParse(strInputRoomNumberKingSuiteP3, out intInputRoomNumberKingSuiteP3))
+            {
+                MessageBox.Show("Please enter a valid number of rooms.");
+            }
+            if (!Int32.TryParse(strInputRoomNumberPresidentialP3, out intInputRoomNumberPresidentialP3))
+            {
+                MessageBox.Show("Please enter a valid number of rooms.");
+            }
+
+            if (!Int32.TryParse(strAdminRoomNumberKingP3, out intAdminRoomNumberKingP3))
+            {
+                MessageBox.Show("Please enter a valid number of rooms.");
+            }
+            if (!Int32.TryParse(strAdminRoomNumberKingDeluxeP3, out intAdminRoomNumberKingDeluxeP3))
+            {
+                MessageBox.Show("Please enter a valid number of rooms.");
+            }
+            if (!Int32.TryParse(strAdminRoomNumberQueenP3, out intAdminRoomNumberQueenP3))
+            {
+                MessageBox.Show("Please enter a valid number of rooms.");
+            }
+            if (!Int32.TryParse(strAdminRoomNumberQueenDeluxeP3, out intAdminRoomNumberQueenDeluxeP3))
+            {
+                MessageBox.Show("Please enter a valid number of rooms.");
+            }
+            if (!Int32.TryParse(strAdminRoomNumberKingSuiteP3, out intAdminRoomNumberKingSuiteP3))
+            {
+                MessageBox.Show("Please enter a valid number of rooms.");
+            }
+            if (!Int32.TryParse(strAdminRoomNumberPresidentialP3, out intAdminRoomNumberPresidentialP3))
+            {
+                MessageBox.Show("Please enter a valid number of rooms.");
+            }
+           
+
+            if (!Double.TryParse(strInputPriceKingP3, out dblInputPriceKingP3))
+            {
+                MessageBox.Show("Please enter a valid price.");
+            }
+            if (!Double.TryParse(strInputPriceKingDeluxeP3, out dblInputPriceKingDeluxeP3))
+            {
+                MessageBox.Show("Please enter a valid price.");
+            }
+            if (!Double.TryParse(strInputPriceQueenP3, out dblInputPriceQueenP3))
+            {
+                MessageBox.Show("Please enter a valid price.");
+            }
+            if (!Double.TryParse(strInputPriceQueenDeluxeP3, out dblInputPriceQueenDeluxeP3))
+            {
+                MessageBox.Show("Please enter a valid price.");
+            }
+            if (!Double.TryParse(strInputPriceKingSuiteP3, out dblInputPriceKingSuiteP3))
+            {
+                MessageBox.Show("Please enter a valid price.");
+            }
+            if (!Double.TryParse(strInputPricePresidentialP3, out dblInputPricePresidentialP3))
+            {
+                MessageBox.Show("Please enter a valid price.");
+            }
+            if (!Double.TryParse(strAdminPriceKingP3, out dblAdminPriceKingP3))
+            {
+                MessageBox.Show("Please enter a valid price.");
+            }
+            if (!Double.TryParse(strAdminPriceKingDeluxeP3, out dblAdminPriceKingDeluxeP3))
+            {
+                MessageBox.Show("Please enter a valid price.");
+            }
+            if (!Double.TryParse(strAdminPriceQueenP3, out dblAdminPriceQueenP3))
+            {
+                MessageBox.Show("Please enter a valid price.");
+            }
+            if (!Double.TryParse(strAdminPriceQueenDeluxeP3, out dblAdminPriceQueenDeluxeP3))
+            {
+                MessageBox.Show("Please enter a valid price.");
+            }
+            if (!Double.TryParse(strAdminPriceKingSuiteP3, out dblAdminPriceKingSuiteP3))
+            {
+                MessageBox.Show("Please enter a valid price.");
+            }
+            if (!Double.TryParse(strAdminPricePresidentialP3, out dblAdminPricePresidentialP3))
+            {
+                MessageBox.Show("Please enter a valid price.");
+            }
+
+            //At least one field must be filled out.
+
             //Set up nav bar
 
             //Import from text file to left-hand text boxes upon opening
 
-            //Validate input (fields are not required but are either intergers or doubles)
+      
 
 
             //Submit change button is reflected by left-hand text box changing and export
