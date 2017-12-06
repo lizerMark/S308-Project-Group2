@@ -22,11 +22,18 @@ namespace HotelReservations
     /// </summary>
     public partial class RoomManagement : Window
     {
-        public RoomManagement()
+        
+            List<Customers> customerList;
+
+    }
+    public RoomManagement()
         {
             InitializeComponent();
-            //Declare Variables
-            int intAdminRoomNumberKingP3 = Convert.ToInt32(txtRoomNumberKingP3.Text.Trim());
+        customerList = new List<Customers>();
+        dtgCustomers.ItemsSource = customerList;
+
+        //Declare Variables
+        int intAdminRoomNumberKingP3 = Convert.ToInt32(txtRoomNumberKingP3.Text.Trim());
             int intAdminRoomNumberKingDeluxeP3 = Convert.ToInt32(txtRoomNumberKingDeluxeP3.Text.Trim());
             int intAdminRoomNumberQueenP3 = Convert.ToInt32(txtRoomNumberQueensP3.Text.Trim());
             int intAdminRoomNumberQueenDeluxeP3 = Convert.ToInt32(txtRoomNumberQueensDeluxeP3.Text.Trim());
@@ -185,6 +192,7 @@ namespace HotelReservations
             //Set up nav bar
 
             //Import from text file to left-hand text boxes upon opening
+
             {
                 OpenFileDialog openFileDialog = new OpenFileDialog();
                 openFileDialog.Filter = "JSON File | *.json";
@@ -215,17 +223,60 @@ namespace HotelReservations
 
             }
 
+        //Submit change button is reflected by left-hand text box changing and export
 
-
-
-            //Submit change button is reflected by left-hand text box changing and export
-
-            //ASK ABOUT ROOM QUANTITY (IS IT NUMBER BUILT OR NUMBER AVAILABLE?)
-        }
-
-        private void btnSubmit_Copy_Click(object sender, RoutedEventArgs e)
+    private void btnSubmit_Click(object sender, RoutedEventArgs e)
+    {
         {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "JSON Files | *.json";
 
+
+            if (saveFileDialog.ShowDialog() == true)
+            {
+                string strFilePath = saveFileDialog.FileName;
+
+                try
+                {
+                    StreamWriter writer = new StreamWriter(strFilePath, false);
+                    string jsonData = JsonConvert.SerializeObject(customerList);
+                    writer.Write(jsonData);
+                    writer.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error in export process: " + ex.Message);
+                }
+
+                MessageBox.Show("Export completed!" + Environment.NewLine + "File Created: " + strFilePath);
+            }
+            else
+            {
+                MessageBox.Show("You did not provide a file to save to");
+            }
         }
     }
+        //set file path to properly store data
+        private string GetFilePath(string extension, bool withTimestamp)
+    {
+
+        string strFilePath = @"..\..\..\Data\Customers_Test";
+        string strTimeStamp = DateTime.Now.Ticks.ToString();
+
+        if (withTimestamp)
+        {
+            strFilePath += "_" + strTimeStamp;
+        }
+
+        strFilePath += "." + extension;
+
+        return strFilePath;
+
+    }
+
+
+
+    //ASK ABOUT ROOM QUANTITY (IS IT NUMBER BUILT OR NUMBER AVAILABLE?)
 }
+
+

@@ -51,7 +51,7 @@
         <Button x:Name="btnNewReservationP3" Content="New Reservation" HorizontalAlignment="Left" Margin="199,39,0,0" VerticalAlignment="Top" Width="115" FontFamily="Verdana"/>
         <Button x:Name="btnRoomManagementP3" Content="Room Management" HorizontalAlignment="Left" Margin="344,39,0,0" VerticalAlignment="Top" Width="119" FontFamily="Verdana"/>
         <Button x:Name="btnReservationsReportP3" Content="Reservations Report" HorizontalAlignment="Left" Margin="499,39,0,0" VerticalAlignment="Top" Width="124" FontFamily="Verdana"/>
-        <Button x:Name="btnSubmit" Content="Submit Change" HorizontalAlignment="Left" Margin="470,317,0,0" VerticalAlignment="Top" Width="129" Height="30" TabIndex="25"/>
+        <Button x:Name="btnSubmit" Content="Submit Change" HorizontalAlignment="Left" Margin="470,317,0,0" VerticalAlignment="Top" Width="129" Height="30" TabIndex="25" Click="btnSubmit_Click"/>
     </Grid>
 
 </Window>

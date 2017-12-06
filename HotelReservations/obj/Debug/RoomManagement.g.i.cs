@@ -564,6 +564,12 @@ namespace HotelReservations {
             return;
             case 45:
             this.btnSubmit = ((System.Windows.Controls.Button)(target));
+            
+            #line 54 "..\..\RoomManagement.xaml"
+            this.btnSubmit.Click += new System.Windows.RoutedEventHandler(this.btnSubmit_Click);
+            
+            #line default
+            #line hidden
             return;
             }
             this._contentLoaded = true;
