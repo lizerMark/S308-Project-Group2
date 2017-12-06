@@ -1,5 +1,8 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -182,13 +185,47 @@ namespace HotelReservations
             //Set up nav bar
 
             //Import from text file to left-hand text boxes upon opening
+            {
+                OpenFileDialog openFileDialog = new OpenFileDialog();
+                openFileDialog.Filter = "JSON File | *.json";
 
-      
+                if (openFileDialog.ShowDialog() == true)
+                {
+                    string strFilePath = openFileDialog.FileName;
+
+                    try
+                    {
+                        StreamReader reader = new StreamReader(strFilePath);
+                        string jsonData = reader.ReadToEnd();
+                        reader.Close();
+
+                        customerList = JsonConvert.DeserializeObject<List<Customers>>(jsonData);
+                        dtgCustomers.ItemsSource = customerList;
+                    }
+                    catch (Exception Ex)
+                    {
+                        MessageBox.Show("Error in import process" + Ex.Message);
+                    }
+                    dtgCustomers.Items.Refresh();
+                }
+                else
+                {
+                    MessageBox.Show("You did not select a file to open.");
+                }
+
+            }
+
+
 
 
             //Submit change button is reflected by left-hand text box changing and export
 
             //ASK ABOUT ROOM QUANTITY (IS IT NUMBER BUILT OR NUMBER AVAILABLE?)
+        }
+
+        private void btnSubmit_Copy_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
