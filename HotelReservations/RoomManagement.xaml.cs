@@ -187,9 +187,37 @@ namespace HotelReservations
                 MessageBox.Show("Please enter a valid price.");
             }
 
-            //At least one field must be filled out.
 
             //Set up nav bar
+    private void btnMainMenuP3_Click(object sender, RoutedEventArgs e)
+    {
+        MainMenu newMain = new MainMenu();
+        newMain.Show();
+        this.Close();
+    }
+
+    private void btnNewReservationP3_Click(object sender, RoutedEventArgs e)
+    {
+        NewReservation newRes = new NewReservation();
+        newRes.Show();
+        this.Close();
+    }
+
+    private void btnRoomManagementP3_Click(object sender, RoutedEventArgs e)
+    {
+        RoomManagement newRoomMgmt = new RoomManagement();
+        newRoomMgmt.Show();
+        this.Close();
+    }
+
+    private void btnReservationsReportP3_Click(object sender, RoutedEventArgs e)
+    {
+        ReservationsReport newResReport = new ReservationsReport();
+        newResReport.Show();
+        this.Close();
+    }
+
+
 
             //Import from text file to left-hand text boxes upon opening
 
@@ -273,10 +301,6 @@ namespace HotelReservations
         return strFilePath;
 
     }
-
-
-
-    //ASK ABOUT ROOM QUANTITY (IS IT NUMBER BUILT OR NUMBER AVAILABLE?)
 }
 
 
